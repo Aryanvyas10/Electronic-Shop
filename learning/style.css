@@ -1,0 +1,22 @@
+.welcome {
+    font-size: 96px;
+    height: auto;
+    width: auto;
+    border: 2px solid black;
+    Color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+.button{
+    position: absolute;
+    top:67%;
+    left:90%;
+    transform: translate(-50%, -50%);
+    animation: buttonAnimation 1s ease-in-out infinite;
+    animation-delay: 1s;   
+}

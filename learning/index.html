@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Product Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+  
+  <div class="navbar">
+    <div class="logo">GadgetShop</div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for products...">
+      <button onclick="searchProducts()">Search</button>
+      <button onclick="resetSearch()" style="margin-left: 10px;">Reset</button>
+    </div>
+    <div class="nav-links">
+      <a href="#contact">Contact Us</a>
+      <a href="#help">Help</a>
+      <button class="cart-button">🛒 Cart</button>
+    </div>
+  </div>
+  
+  <div class="box-0">
+    Explore the Latest Tech!
+  </div>
+  
+  
+  <!-- Products -->
+  <div class="box-space">
+    <!-- Laptop -->
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg');"></div>
+      <div class="product-info">
+        <div class="product-name">MacBook Air M2</div>
+        <div class="product-tag green-tag">Lightweight</div>
+        <div class="product-tag blue-tag">M2 Chip</div>
+      </div>
+    </div>
+  
+    <div class="product-box">
+        <div class="product-img" style="background-image: url('https://m.media-amazon.com/images/I/71hC42cKbsL._UF1000,1000_QL80_.jpg');"></div>
+        <div class="product-info">
+          <div class="product-name">Hp Victus</div>
+          <div class="product-tag green-tag">Metal Body</div>
+          <div class="product-tag blue-tag">Top Rating</div>
+        </div>
+      </div>
+    
+  
+     <div class="product-box">
+        <div class="product-img" style="background-image: url('https://dlcdnwebimgs.asus.com/gain/1d7a4201-75e1-4bca-bb48-3946874470ef/');"></div>
+        <div class="product-info">
+          <div class="product-name">Asus Vivobook 15</div>
+          <div class="product-tag green-tag">Metal Body</div>
+          <div class="product-tag blue-tag">Top Rating</div>
+        </div>
+      </div>
+    
+    
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('macbookm4.jpg');"></div>
+      <div class="product-info">
+        <div class="product-name">Macbook m4</div>
+        <div class="product-tag green-tag">Metal Body</div>
+        <div class="product-tag blue-tag">Top Rating</div>
+      </div>
+    </div>
+    <!-- Mobiles -->
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('samsungs24.jpg');"></div>
+      <div class="product-info">
+        <div class="product-name">Samsung S24</div>
+        <div class="product-tag green-tag">New Release</div>
+        <div class="product-tag blue-tag">Flagship</div>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('iphone16.jpg');"></div>
+      <div class="product-info">
+        <div class="product-name">iPhone 16</div>
+        <div class="product-tag green-tag">Coming Soon</div>
+        <div class="product-tag blue-tag">Innovation</div>
+      </div>
+    </div>
+    
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('https://images-eu.ssl-images-amazon.com/images/I/71CXhVhpM0L._AC_UL210_SR210,210_.jpg');"></div>
+      <div class="product-info">
+        <div class="product-name">Galaxy S24 Ultra</div>
+        <div class="product-tag green-tag">Top Seller</div>
+        <div class="product-tag blue-tag">Affordable</div>
+      </div>
+    </div>
+    
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('https://oasis.opstatics.com/content/dam/oasis/page/2024/global/product/open/red-specs.png');"></div>
+      <div class="product-info">
+        <div class="product-name">OnePlus Open</div>
+        <div class="product-tag green-tag">Limited Offer</div>
+        <div class="product-tag blue-tag">Smart Tech</div>
+      </div>
+    </div>
+    <!-- Bluetooth -->
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwf3572623/JBL_FLIP_ESSENTIAL_2_HERO_36360_x3.png');"></div>
+      <div class="product-info">
+        <div class="product-name">JBL Flip 6</div>
+        <div class="product-tag green-tag">Waterproof</div>
+        <div class="product-tag blue-tag">Power Bass</div>
+      </div>
+    </div> 
+
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_Spinx_Pro.jpg?v=1709718328');"></div>
+      <div class="product-info">
+        <div class="product-name">Sony WH-1000XM5</div>
+        <div class="product-tag green-tag">Waterproof</div>
+        <div class="product-tag blue-tag">Power Bass</div>
+      </div>
+    </div>
+    
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('https://i.ebayimg.com/images/g/g68AAOSw0CVnbCQA/s-l1200.jpg');"></div>
+      <div class="product-info">
+        <div class="product-name">Boat SpinX Pro</div>
+        <div class="product-tag green-tag">Waterproof</div>
+        <div class="product-tag blue-tag">Power Bass</div>
+      </div>
+    </div>
+    
+    <div class="product-box">
+      <div class="product-img" style="background-image: url('https://www.boat-lifestyle.com/cdn/shop/files/Artboard_5_49fd56b4-0790-4a3f-ac7c-59f989e1dda9_1800x.png?v=1742456928');"></div>
+      <div class="product-info">
+        <div class="product-name">Boat Stone Ignite</div>
+        <div class="product-tag green-tag">Waterproof</div>
+        <div class="product-tag blue-tag">Power Bass</div>
+      </div>
+    </div>
+    
+    <div class="product-box">
+     <div class="product-img" style="background-image: url('https://m.media-amazon.com/images/I/51HBom8xz7L._SL1500_.jpg');"></div>
+     <div class="product-info">
+       <div class="product-name">AirBirds Pro</div>
+       <div class="product-tag green-tag">Top Rated</div>
+       <div class="product-tag blue-tag">Noise Cancel</div>
+     </div>
+   </div>
+
+
+<!-- <--javascript for search button--> 
+
+  
+  <script>
+    const input = document.getElementById('searchInput');
+    input.addEventListener('input', searchProducts);
+
+    function searchProducts() {
+      const query = input.value.toLowerCase();
+      const products = document.querySelectorAll('.product-box');
+
+      products.forEach(product => {
+        const name = product.querySelector('.product-name').textContent.toLowerCase();
+        product.style.display = name.includes(query) ? 'flex' : 'none';
+      });
+    }
+
+    function resetSearch() {
+      input.value = '';
+      searchProducts();
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Payment</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .qr-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .qr-box img {
+      width: 100%;
+      max-width: 300px;
+      margin: 20px 0;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .back-home:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="qr-box">
+  <h1>Scan to Pay</h1>
+  <p>Please scan the QR code below using any UPI app to complete your payment.</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJMDgsYtH3bidrEtxrMPuIhT833CWX5fxHXQ&s" alt="QR Code for Payment">
+  <br>
+  <a href="index.html" class="back-home">Payment Done</a>
+</div>
+
+</body>
+</html>

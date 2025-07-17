@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Product Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+  <div class="navbar">
+    <div class="logo">Electronics Shop</div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for products...">
+      <button onclick="searchProducts()">Search</button>
+      <button onclick="resetSearch()" style="margin-left: 10px;">Reset</button>
+    </div>
+    <div class="nav-links">
+      <a href="cart.html" class="cart-button">🛒 Cart <span id="cart-count">0</span></a>
+      <button class="user-button" onclick="askUsername()">👤 Set Name</button>
+      <span id="username-display" class="username-display"></span>
+    </div>
+  </div>
+
+  <div class="box-0">
+    Explore the Latest Tech!
+  </div>
+
+
+  <!-- Products -->
+  <!-- <div id="Headings">Laptops</div> -->
+  <div class="box-space">
+    <div class="product-box">
+      <a <div class="product-img" href="in.html" style="background-image: url('https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg');"></a>
+      <div class="product-info">
+        <div class="product-name">MacBook Air M2</div>
+        <div class="product-price">₹1,09,990</div>
+        <div class="product-tag green-tag">Lightweight</div>
+        <div class="product-tag blue-tag">M2 Chip</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://m.media-amazon.com/images/I/71hC42cKbsL._UF1000,1000_QL80_.jpg');"></a>
+      <div class="product-info">
+        <div class="product-name">Hp Victus</div>
+        <div class="product-price">₹79,990</div>
+        <div class="product-tag green-tag">Metal Body</div>
+        <div class="product-tag blue-tag">Top Rating</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product-box">
+      <a <div class="product-img btn bg-white" href="in.html"
+        style="background-image: url('https://dlcdnwebimgs.asus.com/gain/1d7a4201-75e1-4bca-bb48-3946874470ef/');"></a>
+
+      <div class="product-info">
+        <div class="product-name">Asus Vivobook 15</div>
+        <div class="product-price">₹56,999</div>
+        <div class="product-tag green-tag">Metal Body</div>
+        <div class="product-tag blue-tag">Top Rating</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product-box">
+
+      <a <div class="product-img btn bg-white" href="in.html" style="background-image: url('macbookm4.jpg');"></a>
+
+      <div class="product-info">
+        <div class="product-name">Macbook m4</div>
+        <div class="product-price">₹1,39,990</div>
+        <div class="product-tag green-tag">Metal Body</div>
+        <div class="product-tag blue-tag">Top Rating</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div id="Headings">Mobile Phones</div> -->
+    <div class="product-box">
+      <a <div class="product-img" href="in.html" style="background-image: url('samsungs24.jpg');"></a>
+      <div class="product-info">
+        <div class="product-name">Samsung S24</div>
+        <div class="product-price">₹89,999</div>
+        <div class="product-tag green-tag">New Release</div>
+        <div class="product-tag blue-tag">Flagship</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html" style="background-image: url('iphone16.jpg');"></a>
+      <div class="product-info">
+        <div class="product-name">iPhone 16</div>
+        <div class="product-price">₹1,29,900</div>
+        <div class="product-tag green-tag">Coming Soon</div>
+        <div class="product-tag blue-tag">Innovation</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://images-eu.ssl-images-amazon.com/images/I/71CXhVhpM0L._AC_UL210_SR210,210_.jpg');">
+      </a>
+      <div class="product-info">
+        <div class="product-name">Galaxy S24 Ultra</div>
+        <div class="product-price">₹1,19,999</div>
+        <div class="product-tag green-tag">Top Seller</div>
+        <div class="product-tag blue-tag">Affordable</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://oasis.opstatics.com/content/dam/oasis/page/2024/global/product/open/red-specs.png');">
+      </a>
+      <div class="product-info">
+        <div class="product-name">OnePlus Open</div>
+        <div class="product-price">₹1,39,999</div>
+        <div class="product-tag green-tag">Limited Offer</div>
+        <div class="product-tag blue-tag">Smart Tech</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="Headings">Bluetooth</div> -->
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwf3572623/JBL_FLIP_ESSENTIAL_2_HERO_36360_x3.png');">
+      </a>
+      <div class="product-info">
+        <div class="product-name">JBL Flip 6</div>
+        <div class="product-price">₹8,499</div>
+        <div class="product-tag green-tag">Waterproof</div>
+        <div class="product-tag blue-tag">Power Bass</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone_Spinx_Pro.jpg?v=1709718328');"></a>
+      <div class="product-info">
+        <div class="product-name">Sony WH-1000XM5</div>
+        <div class="product-price">₹29,990</div>
+        <div class="product-tag green-tag">Waterproof</div>
+        <div class="product-tag blue-tag">Power Bass</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://i.ebayimg.com/images/g/g68AAOSw0CVnbCQA/s-l1200.jpg');"></a>
+      <div class="product-info">
+        <div class="product-name">Boat SpinX Pro</div>
+        <div class="product-price">₹3,999</div>
+        <div class="product-tag green-tag">Waterproof</div>
+        <div class="product-tag blue-tag">Power Bass</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://www.boat-lifestyle.com/cdn/shop/files/Artboard_5_49fd56b4-0790-4a3f-ac7c-59f989e1dda9_1800x.png?v=1742456928');"></a>
+      <div class="product-info">
+        <div class="product-name">Boat Stone Ignite</div>
+        <div class="product-price">₹2,499</div>
+        <div class="product-tag green-tag">Waterproof</div>
+        <div class="product-tag blue-tag">Power Bass</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="Headings">Airpods</div> -->
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://m.media-amazon.com/images/I/51HBom8xz7L._SL1500_.jpg');"></a>
+      <div class="product-info">
+        <div class="product-name">AirBirds Pro</div>
+        <div class="product-price">₹4,999</div>
+        <div class="product-tag green-tag">Top Rated</div>
+        <div class="product-tag blue-tag">Noise Cancel</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://www.apple.com/newsroom/images/product/airpods/standard/Apple_AirPods-3rd-gen_hero_10182021.jpg.news_app_ed.jpg');"></a>
+      <div class="product-info">
+        <div class="product-name">Apple AirPods</div>
+        <div class="product-price">₹19,900</div>
+        <div class="product-tag green-tag">Top Rated</div>
+        <div class="product-tag blue-tag">Noise Cancel</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://estreet.pk/media/bss/webp/media/catalog/product/cache/12d96b7cdffbe2e82811f5f2c39a586d/5/-/5-apple-airpods-3rd-generation-c-20220901083359-550x550w.jpg.webp');"></a>
+      <div class="product-info">
+        <div class="product-name">Iphone airpods</div>
+        <div class="product-price">₹18,499</div>
+        <div class="product-tag green-tag">Top Rated</div>
+        <div class="product-tag blue-tag">Noise Cancel</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-box">
+      <a <div class="product-img" href="in.html"
+        style="background-image: url('https://tiimg.tistatic.com/fp/2/008/592/white-wireless-earbuds-670.jpg');"></a>
+      <div class="product-info">
+        <div class="product-name">Boat airpods</div>
+        <div class="product-price">₹1,999</div>
+        <div class="product-tag green-tag">Waterproof</div>
+        <div class="product-tag blue-tag">Power Bass</div>
+        <div class="product-actions">
+          <button class="buy-button">Buy Now</button>
+          <button class="add-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <--javascript for search button-->
+
+
+  <script>
+    const input = document.getElementById('searchInput');
+    input.addEventListener('input', searchProducts);
+
+    function searchProducts() {
+      const query = input.value.toLowerCase();
+      const products = document.querySelectorAll('.product-box');
+
+      products.forEach(product => {
+        const name = product.querySelector('.product-name').textContent.toLowerCase();
+        product.style.display = name.includes(query) ? 'flex' : 'none';
+      });
+    }
+
+    function resetSearch() {
+      input.value = '';
+      searchProducts();
+    }
+
+    // for cart button activation
+
+    document.querySelectorAll('.buy-button').forEach(button => {
+      button.addEventListener('click', () => {
+        alert('Redirecting to checkout...');
+      });
+    });
+
+    document.querySelectorAll('.add-cart-button').forEach(button => {
+      button.addEventListener('click', () => {
+        alert('Product added to cart!');
+      });
+    });
+
+    // username button
+    function askUsername() {
+      const username = prompt("Please enter your name:");
+      if (username) {
+        document.getElementById('username-display').textContent = `Welcome, ${username}!`;
+      }
+    }
+    // for cart count
+
+    const searchInput = document.getElementById('searchInput');
+    input.addEventListener('input', searchProducts);
+
+    function searchProducts() {
+      const query = input.value.toLowerCase();
+      const products = document.querySelectorAll('.product-box');
+
+      products.forEach(product => {
+        const name = product.querySelector('.product-name').textContent.toLowerCase();
+        product.style.display = name.includes(query) ? 'flex' : 'none';
+      });
+    }
+
+    function resetSearch() {
+      input.value = '';
+      searchProducts();
+    }
+
+    //  Cart functionality
+    let cartCount = 0;
+    const cartCountSpan = document.getElementById('cart-count');
+    const addCartButtons = document.querySelectorAll('.add-cart-button');
+
+    addCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        cartCount++;
+        cartCountSpan.textContent = cartCount;
+      });
+    });
+
+    // for store data in cart 
+    addCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const productBox = button.closest('.product-box');
+        const name = productBox.querySelector('.product-name').textContent;
+
+        // Load existing cart from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Add new product
+        cart.push({ name });
+
+        // Save back to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        // Update count
+        cartCount++;
+        cartCountSpan.textContent = cartCount;
+      });
+    });
+
+
+    // // Optional: Buy button
+    // document.querySelectorAll('.buy-button').forEach(button => {
+    //   button.addEventListener('click', () => {
+    //     alert('Redirecting to checkout...');
+    //   });
+    // });
+    // buy now buttpn for page link
+    document.querySelectorAll('.buy-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const productBox = button.closest('.product-box');
+        const productName = productBox.querySelector('.product-name').textContent;
+
+        function buyNow() {
+          const product = document.getElementById('productName').textContent;
+          const price = document.getElementById('productPrice').textContent;
+
+          // Store data in localStorage
+          localStorage.setItem('buy-now-product', product);
+          localStorage.setItem('buy-now-price', price);
+
+          // Redirect to checkout page
+          window.location.href = 'checkout.html';
+        }
+        // Save selected product to localStorage
+        const productPrice = productBox.querySelector('.product-price')?.textContent || "₹0";
+        localStorage.setItem('buy-now-product', productName);
+        localStorage.setItem('buy-now-price', productPrice);
+
+        // Redirect to checkout
+        window.location.href = 'checkout.html';
+      });
+    });
+  </script>
+</body>
+
+</html>

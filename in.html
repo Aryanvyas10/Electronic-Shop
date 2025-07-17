@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      padding: 40px;
+      background: #f4f4f4;
+    }
+
+    .product-detail-container {
+      display: flex;
+      gap: 40px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .product-detail-image {
+      width: 400px;
+      height: 400px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .product-detail-info {
+      flex: 1;
+    }
+
+    .product-detail-info h2 {
+      margin-top: 0;
+    }
+
+    .product-price {
+      font-size: 24px;
+      color: green;
+      margin: 10px 0;
+    }
+
+    .product-actions button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .buy-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+    }
+
+    .add-cart-button {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-detail-container">
+    <div id="productImage" class="product-detail-image"></div>
+    <div class="product-detail-info">
+      <h2 id="productName">Product Name</h2>
+      <div id="productPrice" class="product-price">₹0</div>
+      <p id="productDescription">This is a high-performance product with modern features and stylish design. Perfect for tech enthusiasts.</p>
+      <div class="product-actions">
+        <button class="buy-button" onclick="buyNow()">Buy Now</button>
+        <button class="add-cart-button" onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Read URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name') || 'Product';
+    const price = urlParams.get('price') || '0';
+    const image = urlParams.get('image') || '';
+
+    document.getElementsByClassName('productName').textContent = name;
+    document.getElementsByClassName('productPrice').textContent = '₹' + price;
+    document.getElementsByClassName('productImage').style.backgroundImage = `url('${image}')`;
+
+    function buyNow() {
+      localStorage.setItem('buy-now-product', name);
+      localStorage.setItem('buy-now-price', '₹' + price);
+      window.location.href = 'checkout.html';
+    }
+
+    function addToCart() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({ name, price });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert('Product added to cart!');
+    }
+    
+  </script>
+
+</body>
+</html>
